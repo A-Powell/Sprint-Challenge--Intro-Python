@@ -17,3 +17,40 @@
 #     pass
 #
 # Put a comment noting which class is the base class
+
+
+class Vehicle():
+    '''Base class'''
+    pass
+
+
+class FlightVehicle(Vehicle):
+    '''
+    Stems from Vehicle
+    '''
+    pass
+
+
+class Starship(FlightVehicle):
+    '''Stems from FlightVehicle, which stems from Vehicle'''
+    pass
+
+
+class GroundVehicle(Vehicle):
+    '''Stems from Vehicle'''
+    pass
+
+
+class Car(GroundVehicle):
+    '''Stems from Ground Vehicle, which stems from Vehicle'''
+    pass
+
+
+class Motorcycle(GroundVehicle):
+    '''stems from Ground Vehicle, which stems from Vehicle'''
+    pass
+
+
+class Airplane(FlightVehicle):
+    '''Stems from Flight Vehicle, which stems from vehicle'''
+    pass
